@@ -1,5 +1,31 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block body
+
+  #welcome.jumbotron
+    h1 Welcome to Stormpath-login
+    p.lead.
+      <br/>
+      <br/>
+      Blah1
+    ul
+      li Bleh
+      li.
+        Blah2
+      li Blah3
+    <br/>
+    <br/>
+    h2 Header2
+    br
+    p.
+      p1
+    p.
+      p2
+    p.
+      <b>NOTE</b>:
+      This app will NOT work until you have gone through the bootstrapping
+      instructions found in this project's <code>README.md</code> file. For more
+      information, please follow the guide on this project's
+      <a href="https://github.com/stormpath/stormpath-express-sample">GitHub page</a>.
+    p.bigbutton
+      a.bigbutton.btn.btn-lg.btn-danger(href='/register', role='button') Register
