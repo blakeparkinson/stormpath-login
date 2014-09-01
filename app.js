@@ -36,11 +36,10 @@ app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //stormpath
-app.use(session({
-  secret: process.env.EXPRESS_SECRET,
+/*  secret: 'fff',
   key: 'sid',
   cookie: {secure: false},
-}));
+}));*/
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());

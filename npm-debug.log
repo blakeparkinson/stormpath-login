@@ -1,26 +1,54 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'owner', 'ls', 'stormpath-login' ]
 2 info using npm@1.4.14
 3 info using node@v0.10.29
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart stormpath-login@0.0.0
-6 info start stormpath-login@0.0.0
-7 verbose unsafe-perm in lifecycle true
-8 info stormpath-login@0.0.0 Failed to exec start script
-9 error stormpath-login@0.0.0 start: `node ./bin/www`
-9 error Exit status 8
-10 error Failed at the stormpath-login@0.0.0 start script.
-10 error This is most likely a problem with the stormpath-login package,
-10 error not with npm itself.
-10 error Tell the author that this fails on your system:
-10 error     node ./bin/www
-10 error You can get their info via:
-10 error     npm owner ls stormpath-login
-10 error There is likely additional logging output above.
-11 error System Darwin 13.3.0
-12 error command "node" "/usr/local/bin/npm" "start"
-13 error cwd /Users/blake/stormpath-login
-14 error node -v v0.10.29
-15 error npm -v 1.4.14
-16 error code ELIFECYCLE
-17 verbose exit [ 1, true ]
+4 verbose url raw stormpath-login
+5 verbose url resolving [ 'https://registry.npmjs.org/', './stormpath-login' ]
+6 verbose url resolved https://registry.npmjs.org/stormpath-login
+7 info trying registry request attempt 1 at 10:40:53
+8 http GET https://registry.npmjs.org/stormpath-login
+9 http 404 https://registry.npmjs.org/stormpath-login
+10 verbose headers { date: 'Mon, 01 Sep 2014 17:40:53 GMT',
+10 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+10 verbose headers   'content-type': 'application/json',
+10 verbose headers   'cache-control': 'max-age=0',
+10 verbose headers   'content-length': '52',
+10 verbose headers   'accept-ranges': 'bytes',
+10 verbose headers   via: '1.1 varnish',
+10 verbose headers   age: '0',
+10 verbose headers   'x-served-by': 'cache-sjc3121-SJC',
+10 verbose headers   'x-cache': 'MISS',
+10 verbose headers   'x-cache-hits': '0',
+10 verbose headers   'x-timer': 'S1409593253.389419,VS0,VE37',
+10 verbose headers   'keep-alive': 'timeout=10, max=50',
+10 verbose headers   connection: 'Keep-Alive' }
+11 silly registry.get cb [ 404,
+11 silly registry.get   { date: 'Mon, 01 Sep 2014 17:40:53 GMT',
+11 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+11 silly registry.get     'content-type': 'application/json',
+11 silly registry.get     'cache-control': 'max-age=0',
+11 silly registry.get     'content-length': '52',
+11 silly registry.get     'accept-ranges': 'bytes',
+11 silly registry.get     via: '1.1 varnish',
+11 silly registry.get     age: '0',
+11 silly registry.get     'x-served-by': 'cache-sjc3121-SJC',
+11 silly registry.get     'x-cache': 'MISS',
+11 silly registry.get     'x-cache-hits': '0',
+11 silly registry.get     'x-timer': 'S1409593253.389419,VS0,VE37',
+11 silly registry.get     'keep-alive': 'timeout=10, max=50',
+11 silly registry.get     connection: 'Keep-Alive' } ]
+12 error owner ls Couldn't get owner data stormpath-login
+13 error 404 404 Not Found: stormpath-login
+13 error 404
+13 error 404 'stormpath-login' is not in the npm registry.
+13 error 404 You should bug the author to publish it
+13 error 404
+13 error 404 Note that you can also install from a
+13 error 404 tarball, folder, or http url, or git url.
+14 error System Darwin 13.3.0
+15 error command "node" "/usr/local/bin/npm" "owner" "ls" "stormpath-login"
+16 error cwd /Users/blake/stormpath-login
+17 error node -v v0.10.29
+18 error npm -v 1.4.14
+19 error code E404
+20 verbose exit [ 1, true ]
