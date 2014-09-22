@@ -64,7 +64,7 @@ router.post(
   passport.authenticate(
     'stormpath',
     {
-      successRedirect: '/dashboard',
+      successRedirect: '/home',
       failureRedirect: '/login',
       failureFlash: 'Invalid email or password.',
     }
