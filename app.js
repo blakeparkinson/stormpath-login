@@ -45,7 +45,7 @@ app.use(passport.session());
 app.use(flash());
 
 // Specify the routes here.
-app.use('/', index_routes);
+app.use('/Projects/', index_routes);
 app.use('/', auth_routes);
 
 // catch 404 and forward to error handler
