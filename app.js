@@ -46,7 +46,7 @@ app.use(flash());
 
 // Specify the routes here.
 app.use('/Projects/', index_routes);
-app.use('/', auth_routes);
+app.use('/Projects/', auth_routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
