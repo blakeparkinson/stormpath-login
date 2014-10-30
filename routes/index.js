@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
 // Render the dashboard page.
 router.get('/dashboard', function (req, res) {
   if (!req.user || req.user.status !== 'ENABLED') {
-    return res.redirect('/login');
+    return res.redirect('/logout');
   }
 
   res.render('dashboard', {title: 'Dashboard', user: req.user});
