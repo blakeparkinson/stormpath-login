@@ -11,8 +11,8 @@ var StormpathStrategy = require('passport-stormpath');
 var session = require('express-session');
 var flash = require('connect-flash');
 
-var index_routes = require('./projects/routes/index');
-var auth_routes = require('./projects/routes/auth');
+var index_routes = require('./routes/index');
+var auth_routes = require('./routes/auth');
 
 var app = express();
 
